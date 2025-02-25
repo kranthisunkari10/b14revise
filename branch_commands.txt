@@ -6,4 +6,6 @@ git branch <branch.name>		-- Create Branch
 git checkout <branch.name>		-- Open/Getinto Branch
 git mrge <branch.name>			-- Merging Brach with Main
 git branch -d <branch.name>		-- Delete Branch
+git branch -D <branch.name>		-- Forcefully deleting Brach
 git push origin <branch.name>		-- Pushing Branch from Local Master to Central Repo
+git push origin -d <branch.name>	-- Deleting branch from Central Repo
