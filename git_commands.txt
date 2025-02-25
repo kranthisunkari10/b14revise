@@ -21,5 +21,6 @@ git clone <repo url>	-- Cloning Central Repo to local machine
 
 ---We have to use local commands for adding from Workstation--Staging/Index--Local Repo
 
+git pull --rebase	-- Pull Central Repo when changes made in Central Repo
 git push		-- Push local repo to Central Repo
 
