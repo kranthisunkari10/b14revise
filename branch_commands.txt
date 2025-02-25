@@ -1,0 +1,8 @@
+Branch Commands:
+
+
+git branch				-- Show Branches
+git branch <branch.name>		-- Create Branch
+git checkout <branch.name>		-- Open/Getinto Branch
+git branch -d <branch.name>		-- Delete Branch
+git push <repo.url> <branch.name>	-- Pushing Branch
