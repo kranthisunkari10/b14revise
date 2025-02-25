@@ -10,6 +10,6 @@ cd ..			-- previous folder
 cat fname		-- openening file
 ls			-- view files in folder
 ll			-- view files in folder with details
-ls -lrth		-- view files in folder with details
+ls -lrth		-- view files in folder with details and timestamp
 ls -la			-- view hidden folders
 history			-- Last 500 commands
