@@ -1,0 +1,5 @@
+Initialization:
+-------------------------------------
+git init				-- Git Initialization
+git config --global user.name "Name"	-- Configure User Name
+git config --global user.email "Email"	-- Configure User Email
