@@ -1,0 +1,15 @@
+Linux Basics :
+
+pwd			--	present working directory
+touch fname1, fname2	-- create new file
+mkdir dir1, dir2	-- create new folder
+rm -rf fname/dir1	-- remove file/dir
+clear cntrl + L		-- clear screen
+cd <dir name>		-- change folder
+cd ..			-- previous folder
+cat fname		-- openening file
+ls			-- view files in folder
+ll			-- view files in folder with details
+ls -lrth		-- view files in folder with details
+ls -la			-- view hidden folders
+history			-- Last 500 commands
