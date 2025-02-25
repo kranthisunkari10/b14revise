@@ -1,2 +1,2 @@
 # b14revise
-Batch 15 Revise
+DevOps Training and Practice
