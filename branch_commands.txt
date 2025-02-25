@@ -1,9 +1,9 @@
 Branch Commands:
-
+---------------------
 
 git branch				-- Show Branches
 git branch <branch.name>		-- Create Branch
 git checkout <branch.name>		-- Open/Getinto Branch
 git mrge <branch.name>			-- Merging Brach with Main
 git branch -d <branch.name>		-- Delete Branch
-git push origin <branch.name>	-- Pushing Branch
+git push origin <branch.name>		-- Pushing Branch from Local Master to Central Repo
