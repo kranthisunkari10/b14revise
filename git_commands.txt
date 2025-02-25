@@ -12,7 +12,7 @@ git commit -m "Message" filename	-- Commit the file to Local Repo
 git commit -m "Message"			-- Commit all files to Local Repo
 git status				-- Status of the files
 git log					-- Log details of all Commits
-git log					-- Compact Log details of all commits
+git log -online				-- Compact Log details of all commits
 git show <commit id>			-- Details of the Commit
 
 
