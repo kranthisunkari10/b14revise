@@ -3,3 +3,13 @@ Initialization:
 git init				-- Git Initialization
 git config --global user.name "Name"	-- Configure User Name
 git config --global user.email "Email"	-- Configure User Email
+
+Local Commands:
+-------------------------------------
+git add filename			-- Add file from Workspace to Staging/Index
+git add .				-- Add all files from the folder to Staging
+git commit -m "Message" filename	-- Commit the file to Local Repo
+git commit -m "Message"			-- Commit all files to Local Repo
+git status				-- Status of the files
+git log					-- Log details of the Commits
+git show <commit id>			-- Details of the Commit
