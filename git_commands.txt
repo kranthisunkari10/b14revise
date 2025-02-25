@@ -13,3 +13,13 @@ git commit -m "Message"			-- Commit all files to Local Repo
 git status				-- Status of the files
 git log					-- Log details of the Commits
 git show <commit id>			-- Details of the Commit
+
+
+Central Repo Commands
+-------------------------------------
+git clone <repo url>	-- Cloning Central Repo to local machine
+
+---We have to use local commands for adding from Workstation--Staging/Index--Local Repo
+
+git push		-- Push local repo to Central Repo
+
