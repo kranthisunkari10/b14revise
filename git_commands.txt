@@ -1,3 +1,4 @@
+
 Initialization:
 -------------------------------------
 git init				-- Git Initialization
@@ -6,22 +7,23 @@ git config --global user.email "Email"	-- Configure User Email
 
 Local Commands:
 -------------------------------------
-git add filename			-- Add file from Workspace to Staging/Index
+git add <file.name>			-- Add file from Workspace to Staging/Index
 git add .				-- Add all files from the folder to Staging
-git commit -m "Message" filename	-- Commit the file to Local Repo
+git commit -m "Message" <file.name>	-- Commit the file to Local Repo
 git commit -m "Message"			-- Commit all files to Local Repo
 git status				-- Status of the files
 git log					-- Log details of all Commits
 git log -online				-- Compact Log details of all commits
-git show <commit id>			-- Details of the Commit
+git show <commit.id>			-- Details of the Commit
 
 
 Central Repo Commands
 -------------------------------------
-git clone <repo url>	-- Cloning Central Repo to local machine
+git clone <repo url>				-- Cloning Central Repo to local machine
 
 ---We have to use local commands for adding from Workstation--Staging/Index--Local Repo
 
-git pull --rebase	-- Pull Central Repo when changes made in Central Repo
-git push		-- Push local repo to Central Repo
+git pull --rebase				-- Pull Central Repo when changes made in Central Repo
+git push					-- Push local repo to Central Repo (Works only while pushing main branch)
+git push origin <file.name>or<branch.name>	-- Push branch or file to central repo
 

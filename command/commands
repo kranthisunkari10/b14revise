@@ -1,0 +1,42 @@
+Initialization:
+-------------------------
+
+git init
+git config --global.username <user.name>
+git config --global.email <user.email>
+
+
+Local Commands
+-------------------------
+touch <file.name>
+mkdir <Folder.name>
+cd <folder.name>
+cd ..
+git add <file.name>
+git add .
+git commit -m "message" <file.name>
+git commit -m "message"
+git push
+git log
+git log -online
+git status
+git show <commit.id>
+
+
+Central Repo
+------------------------
+git clone <git.url>
+git pull --rebase
+git push origin <file.name>/<folder.name>
+
+
+Branch Commands
+------------------------
+git branch
+git branch <branch.name>
+git checkout <branch.name>
+git mrge <branch.name>
+git branch -d <branch.name>
+git branch -D <branch.name>
+git push origin <branch.name>
+git push origin -d <branch.name>
