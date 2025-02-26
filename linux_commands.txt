@@ -4,6 +4,7 @@ pwd			--	present working directory
 touch fname1, fname2	-- create new file
 mkdir dir1, dir2	-- create new folder
 rm -rf fname/dir1	-- remove file/dir
+rm -rf *		-- remove all files
 clear cntrl + L		-- clear screen
 cd <dir name>		-- change folder
 cd ..			-- previous folder
