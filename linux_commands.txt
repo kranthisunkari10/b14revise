@@ -1,16 +1,117 @@
-Linux Basics :
+1. File & Directory Management
+==============================
+Command		Description					DevOps Use Case
+ls		List files in a directory			Checking directory contents in CI/CD pipelines
+pwd		Print current working directory			Debugging scripts running in different directories
+cd		Change directory				Navigating in deployment scripts
+mkdir		Create a new directory				Creating directories for log files, configurations
+rmdir		Remove empty directories			Cleanup tasks in automation scripts
+rm -rf		Remove files and directories forcefully		Deleting old deployments and logs
+cp		Copy files and directories			Copying configuration files in scripts
+mv		Move or rename files				Renaming logs or moving backups
+find		Search files and directories			Locating large log files or debugging configuration files
+stat		Get detailed file information			Checking timestamps for debugging deployments
 
-pwd			--	present working directory
-touch fname1, fname2	-- create new file
-mkdir dir1, dir2	-- create new folder
-rm -rf fname/dir1	-- remove file/dir
-rm -rf *		-- remove all files
-clear cntrl + L		-- clear screen
-cd <dir name>		-- change folder
-cd ..			-- previous folder
-cat fname		-- openening file
-ls			-- view files in folder
-ll			-- view files in folder with details
-ls -lrth		-- view files in folder with details and timestamp
-ls -la			-- view hidden folders
-history			-- Last 500 commands
+2. File Manipulation & Processing
+=================================
+Command		Description					DevOps Use Case
+cat		Display file contents				Viewing logs quickly
+tac		Display file contents in reverse		Checking recent logs
+less		View file contents page by page			Analyzing large log files
+grep		Search inside files				Filtering logs for error messages
+awk		Text processing tool				Extracting data from logs
+sed		Stream editor for modifying text		Replacing values in config files
+cut		Extract portions of text			Parsing logs for monitoring
+sort		Sort lines in a file				Organizing logs by timestamp
+uniq		Remove duplicate lines				Filtering out repeated log entries
+diff		Compare files					Comparing deployment configurations
+
+3. User & Permission Management
+================================
+Command		Description					DevOps Use Case
+whoami		Show current user				Checking user privileges in scripts
+who		List logged-in users				Monitoring active sessions
+id		Show user ID (UID) and group ID (GID)		Debugging access issues
+su		Switch user					Running commands as another user
+sudo		Run commands as root				Granting temporary admin access in scripts
+chmod		Change file permissions				Setting correct permissions for CI/CD pipelines
+chown		Change file owner				Managing permissions in shared environments
+groups		List groups of a user				Verifying DevOps user groups
+passwd		Change user password				Managing authentication for automation
+
+4. Process & System Monitoring
+==============================
+Command		Description					DevOps Use Case
+ps aux		List running processes				Checking which processes consume high CPU
+top		Monitor system performance			Live monitoring of servers
+htop		Interactive system monitoring			Graphical representation of system usage
+kill		Terminate a process				Stopping faulty applications
+killall		Kill all instances of a process			Resetting services
+pkill		Kill processes by name				Stopping running scripts
+uptime		Show system uptime				Checking server availability
+free -m		Show memory usage				Debugging high memory consumption
+df -h		Check disk usage				Monitoring storage for logs and backups
+du -sh		Get directory size				Finding large files consuming disk space
+
+5. Network Management
+================================
+Command		Description					DevOps Use Case
+ifconfig / ip a	Show network interfaces				Checking IP addresses in cloud environments
+ping		Check network connectivity			Debugging network issues
+netstat -tulnp	List open ports					Finding which services are running
+ss -tulnp	More detailed network statistics		Checking active network connections
+nslookup / dig	DNS lookup					Resolving domain names for microservices
+curl		Make HTTP requests				Testing APIs and endpoints
+wget		Download files from the internet		Fetching packages in container environments
+scp		Securely copy files between servers		Deploying configurations remotely
+rsync		Sync files between systems			Keeping files up-to-date between servers
+traceroute	Trace the network path				Debugging network latency
+
+6. Package Management
+=================================
+Command		Description					DevOps Use Case
+apt-get		Install/Update packages (Debian-based)		Installing dependencies for automation tools
+yum		Install/Update packages (RHEL-based)		Managing packages in RedHat-based environments
+dnf		Modern alternative to yum			Package management in Fedora/CentOS
+rpm		Install RPM packages				Handling software installations manually
+snap		Install universal packages			Installing modern applications
+pip		Install Python packages				Managing dependencies for automation scripts
+
+7. Job Scheduling & Automation
+================================
+Command		Description					DevOps Use Case
+crontab -e	Edit scheduled jobs				Running backup and cleanup scripts
+cron		Background job scheduler			Automating deployments
+systemctl	Manage services					Starting and stopping applications
+journalctl	View service logs				Debugging service failures
+
+8. Disk & Backup Management
+===================================
+Command		Description					DevOps Use Case
+tar -cvf	Create an archive				Archiving logs for backups
+tar -xvf	Extract an archive				Restoring backup files
+gzip / gunzip	Compress/Decompress files			Reducing storage consumption
+zip / unzip	Zip and unzip files				Sharing configurations in CI/CD
+mount / umount	Mount/Unmount filesystems			Managing attached storage in cloud
+
+9. Virtualization & Containers
+=========================================
+Command		Description					DevOps Use Case
+docker		Manage containers				Running applications in isolated environments
+docker-compose	Define multi-container applications		Managing microservices
+kubectl		Manage Kubernetes clusters			Deploying containerized applications
+
+10. Security & Access Control
+=========================================
+Command		Description					DevOps Use Case
+ssh		Secure remote access				Managing remote servers
+ssh-keygen	Generate SSH keys				Setting up passwordless authentication
+iptables	Configure firewall rules			Restricting access to services
+fail2ban	Prevent brute-force attacks			Enhancing server security
+
+11. Logs & Debugging
+===========================================
+Command		Description					DevOps Use Case
+tail -f		View logs in real-time				Debugging live applications
+journalctl -xe	View system logs				Investigating service failures
+dmesg		View kernel logs				Checking hardware and boot issues
